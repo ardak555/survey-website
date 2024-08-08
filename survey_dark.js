@@ -638,7 +638,8 @@ next_button.addEventListener("click", () => {
             document.body.appendChild(modal);
         
             next_button.disabled = true;
-
+            logAnswer();
+            
             setTimeout(function() {
                 window.location.href = lastPage.link;
             }, 3000);
